@@ -1,14 +1,9 @@
-var fs = require("fs");
-console.log("readingfile");
-var contents = fs.readFileSync(".bitstarter/index.html");
-console.log("Contents: " + contents);
-
 var express = require('express');
 
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
-  response.send("2");
+  response.send("3" + index.html);
 });
 
 var port = process.env.PORT || 5000;
