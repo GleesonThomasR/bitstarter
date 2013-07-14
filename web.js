@@ -8,7 +8,7 @@ app.get('/', function(request, response) {
 
 var fs = require('fs');
 console.log("");
-fs.readFile("./bitstarter/index.html"), function(error, data) {
+fs.readFile("https://github.com/bitstarter/index.html"), function(error, data) {
     console.log("" + data);});
 
 var port = process.env.PORT || 5000;
