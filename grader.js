@@ -6,7 +6,7 @@ var HTMLFILE_DEFAULT = "index.html";
 var CHECKSFILE_DEFAULT = "checks.json";
 var rest = require('restler');
 var URL_DEFAULT = "myurl";
-
+var url = require('url');
 
 
 var assertFileExists = function(infile) {
@@ -17,6 +17,7 @@ var assertFileExists = function(infile) {
     }
     return instr;
 };
+
 
 var assertUrlExists = function() {
     rest.get(program.url).on('complete',function(result) {
