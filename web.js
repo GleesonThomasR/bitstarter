@@ -4,6 +4,7 @@ var app = express.createServer(express.logger());
 
 var fs  = require('fs');
 
+var htmlfile = "index.html";
 
 app.use(express.logger());
 
